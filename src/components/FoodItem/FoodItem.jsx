@@ -12,7 +12,7 @@ const FoodItem = ({id,name,price,description,image}) => {
 
   const handleAddToCart = () => {
     if (!user) {
-      alert("Please login to add items to cart");
+      setShowLogin(true);
       return;
     }
     addToCart(id);
