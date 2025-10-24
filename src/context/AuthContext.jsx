@@ -57,6 +57,7 @@ const AuthProvider = ({ children }) => {
       setToken(data.token);
       localStorage.setItem('token', data.token);
       localStorage.setItem('user', JSON.stringify(data.user));
+      alert("Signup successful");
       setLoading(false);
       return true;
     } catch (err) {
